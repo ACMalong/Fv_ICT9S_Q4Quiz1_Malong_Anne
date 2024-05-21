@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<title>Log In</title>
+<center>
+		<style>
+
+			Body{
+				background-image: url("https://i.pinimg.com/originals/3f/16/5f/3f165f7dce4b611f3e379c826af924ca.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-color: #ffe6ff;
+				font-family: Monaco;
+				font-size: 30px;	
+			}
+			#login-container{
+				width:500px;
+				border: 1px solid white;
+				background-color:white;
+				padding: 5px;
+				margin: 20px; 
+				height: 600px;;
+			}
+			#email, #pass{
+				border: 8px solid #AC98FA;
+			}
+
+			.container{
+				display: flex;
+				text-align: center;
+			}
+	</style>
+</head>
+<body>
+<!--don't forget to apply internal CSS in the head to add designs to your page-->
+<center>
+
+	<!--put your login form inside a container--> 
+	<div id="login-container"> 
+		<div class="col-md-10">
+			<br><br>
+			<span>ONLINE PORTFOLIO</span>
+			<br>
+			<span>Log In</span>
+			<br><br>
+			<img id="pic" class="rounded-circle"src="https://i.pinimg.com/originals/e3/c9/a9/e3c9a9e5934d65cff25d83a2ac655230.jpg" width="80" height="80">
+			<br><br>
+		
+		<form action="mainpage.htmI" class="form-group">
+			<label id=""><!--id should be the same in line 62--></label><br> 
+			<input type="text" class="form-control bg-light" name="email" id="email" placeholder="Email">
+			<input type="text" class="form-control bg-light" name="password" id="pass" placeholder="Password">
+			<br>
+			<!--copy line 48 to 50 to add input box for password then apply necessary changes-->
+
+			<!--choose a color of a button, then link it to the mainpafe--> 
+			<a href="mainpage.html"><button class="btn btn-primary">Login</a></button>
+			<a href="#"><button type="reset" class="btn btn-danger">Cancel</button></a>
+		</form> 
+		</div>
+	</div> 
+</center>
+	<script type="text/javascript">
+		//ids in line 62 and 63 should be the same as the ids in the forms above
+		document.getElementById("email"). innerHTML = "Email:"; //this is the label for email input box
+		document.getElementById("pass"). innerHTML = "Password:"; //this is the label for email input box
+		//copy line 62 here to create a label for the password 
+	</script>
+</body>
+
+</html>
